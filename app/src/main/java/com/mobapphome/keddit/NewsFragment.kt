@@ -10,7 +10,8 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.droidcba.kedditbysteps.commons.inflate
+import com.mobapphome.keddit.commons.adapter.NewsAdapter
+import com.mobapphome.keddit.commons.extensions.inflate
 import kotlinx.android.synthetic.main.news_fragment.*
 
 class NewsFragment : Fragment() {
@@ -29,5 +30,13 @@ class NewsFragment : Fragment() {
 
         news_list.setHasFixedSize(true)
         news_list.layoutManager = LinearLayoutManager(context)
+
+        initAdapter()
+    }
+
+    private fun initAdapter() {
+        if (news_list.adapter == null) {
+            news_list.adapter = NewsAdapter()
+        }
     }
 }
