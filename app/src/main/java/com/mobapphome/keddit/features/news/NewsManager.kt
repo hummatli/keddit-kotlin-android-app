@@ -4,12 +4,19 @@ package com.mobapphome.keddit.features.news
  * Created by settar on 6/18/17.
  */
 
+import com.mobapphome.keddit.api.NewsAPI
+import com.mobapphome.keddit.api.NewsRestAPI
 import com.mobapphome.keddit.api.RestAPI
 import com.mobapphome.keddit.commons.RedditNews
 import com.mobapphome.keddit.commons.RedditNewsItem
 import rx.Observable
 
-class NewsManager(private val api: RestAPI = RestAPI()) {
+/**
+ * News Manager allows you to request news from Reddit API.
+ *
+ * @author juancho
+ */
+class NewsManager(private val api: NewsAPI = NewsRestAPI()) {
 
     /**
      *

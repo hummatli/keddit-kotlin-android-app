@@ -42,6 +42,12 @@ dependencies {
     // Retrofit
     compile "com.squareup.retrofit2:retrofit:2.0.0"
     compile "com.squareup.retrofit2:converter-moshi:2.0.0"
+
+    // Tests
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.nhaarman:mockito-kotlin:0.7.0'
+    testCompile 'org.jetbrains.spek:spek:1.0.25'
+    testCompile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 repositories {
     mavenCentral()
