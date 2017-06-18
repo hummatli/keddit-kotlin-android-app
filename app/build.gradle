@@ -31,7 +31,13 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
     testCompile 'junit:junit:4.12'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    //Picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
+
+    // RxJava & RxAndroid
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.1.0'
 }
 repositories {
     mavenCentral()
